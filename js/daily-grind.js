@@ -25,7 +25,21 @@ switch(myDay){
     	today =  "Sunday";
  	break;
 
- 	case 2:
+ 	case 1:
+   		today = "Monday";
+        coffee = {
+            name:"Bubble Tea",
+            pic:"bubble-tea.jpg",
+            alt:"A pic of a yummy bubble tea.",
+            color:"pink",
+            day:"Tuesday",
+            desc: `I like me some Bubble Tea!`
+
+        }
+ 	break;
+
+
+    case 2:
    		today = "Tuesday";
         coffee = {
             name:"Bubble Tea",
@@ -37,6 +51,30 @@ switch(myDay){
 
         }
  	break;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
     case 5:
    		today = "Friday";
         coffee = {
