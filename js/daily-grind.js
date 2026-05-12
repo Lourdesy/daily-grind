@@ -127,8 +127,13 @@ console.log(coffee);
 //alert(coffeeTemplate(coffee));
 
 //Adds coffee to page?
+document.getElementById("coffee-cup").innerHTML = coffeeTemplate(coffee);
 
-document.getElementById("coffee-cup").innerHTML = coffeeTemplate(coffee)
+//change strong tags in template to our color
+document.querySelectorAll("#coffee-cup strong").forEach(el => {
+    el.style.color = coffee.color;
+});
+
 
 function coffeeTemplate(coffee){
     let myReturn = "";
