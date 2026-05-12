@@ -41,6 +41,15 @@ switch(myDay){
 
  	case 0:
     	today =  "Sunday";
+        coffee = {
+            name:"Pumpkin Spice Latte",
+            pic:"Pumpkin-spice-latte.jpg",
+            alt:"A pic of a delicious Pumpkin Spice Latte.",
+            color:"purple",
+            day:"Sunday",
+            desc: `Sunday is for cozy vibes! Wrap your hands around a warm Pumpkin Spice Latte, full of cinnamon and nutmeg, while you enjoy your day of rest.`
+
+        }
  	break;
 
  	case 1:
@@ -51,7 +60,7 @@ switch(myDay){
             alt:"A pic of a delicious caramel latte.",
             color:"red",
             day:"Monday",
-            desc: `I like some Caramel Latte!`
+            desc: `Beat the Monday blues! Our rich espresso and buttery caramel swirls will give you the sweet energy boost you need to conquer the work week.`
 
         }
  	break;
@@ -64,7 +73,7 @@ switch(myDay){
             alt:"A pic of a yummy bubble tea.",
             color:"pink",
             day:"Tuesday",
-            desc: `I like me some Bubble Tea!`
+            desc: `Keep it fun on Tuesday! Take a break with our signature Bubble Tea—chewy tapioca pearls and creamy tea make for the perfect midday treat.`
 
         }
  	break;
@@ -76,7 +85,7 @@ switch(myDay){
             alt:"A pic of mocha.",
             color:"Brown",
             day:"Wednesday",
-            desc: `I like me some Mocha!`
+            desc: `Happy Hump Day! You're halfway through the week, and you deserve a decadent Mocha. It's the perfect marriage of rich chocolate and bold coffee.`
 
         }
  	break;
@@ -88,9 +97,11 @@ switch(myDay){
             alt:"A pic of Frappaccino.",
             color:"Blue",
             day:"Thursday",
-            desc: `I like frappaccino!`
+            desc: `The weekend is almost here! Chill out this Thursday with a frosty Frappaccino—thick, icy, and topped with plenty of whipped cream.`
 
         }
+    break;
+
     case 5:
    		today = "Friday";
         coffee = {
@@ -99,7 +110,7 @@ switch(myDay){
             alt:"A pic of drip coffee.",
             color:"green",
             day:"Friday",
-            desc: `I need a constant drip!`
+            desc: `It's Friday! Stay focused and finish strong with our classic Drip coffee. It's hot, fresh, and ready to carry you straight into the weekend.`
 
         }
  	break;
@@ -111,7 +122,7 @@ switch(myDay){
             alt:"A pic of a yummy Cold Brew.",
             color:"orange",
             day:"Saturday",
-            desc: `I want a cold brew!`
+            desc: `Time for a Saturday adventure! Grab a smooth, powerful Cold Brew to keep you going all day long. It's the ultimate high-caffeine fuel for your weekend.`
 
         }
  	break;
