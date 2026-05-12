@@ -28,7 +28,7 @@ console.log(queryString);
 //separate query string parameters
 const urlParams = new URLSearchParams(queryString);
 
-//retrieve data from querystring
+//retrieve data from querystring, if exists
 if(urlParams.has("day")){
     myDay = urlParams.get("day");
 }
@@ -130,7 +130,7 @@ console.log(coffee);
 document.getElementById("coffee-cup").innerHTML = coffeeTemplate(coffee);
 
 //change background color of HTML element
-document.getElementById("coffee-cup").innerHTML = Coffee
+document.querySelector("html").style.backgroundColor = coffee.color;
 
 //change strong tags in template to our color
 document.querySelectorAll("#coffee-cup strong").forEach(el => {
