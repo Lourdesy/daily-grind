@@ -1,5 +1,3 @@
-alert("hello from daily-grind.js!");
-
 /*
 
     One unique image, with appropriate and matching content in the alt tag.  
@@ -17,7 +15,6 @@ alert("hello from daily-grind.js!");
 */
 
 
-
 let myDate = new Date();
 let myDay = myDate.getDay();
 let today = "";
@@ -29,15 +26,16 @@ switch(myDay){
  	break;
 
  	case 2:
-   	    today = "Tuesday";
+   		today = "Tuesday";
         coffee = {
             name:"Bubble Tea",
             pic:"bubble-tea.jpg",
             alt:"A pic of a yummy bubble tea.",
-            color:"pink",
+            color:"pink"
             day:"Tuesday",
-            desc:`I like me some Bubble Tea!`
-        };
+            desc: `I like me some Bubble Tea!`
+
+        }
  	break;
 
  	default:
@@ -47,7 +45,23 @@ switch(myDay){
 
 console.log(coffee);
 
-alert(today);
+alert(coffeeTemplate(coffee));
+
+document.getElementById("coffee-cup").innerHTML = coffeeTemplate(coffee)
+
+function coffeeTemplate(coffee){
+    let myReturn = "";
+
+    myReturn += `
+           <p>
+			<img src="images/${coffee.pic}" alt="${coffee.alt}" id="coffee">
+			<strong>${coffee.day}'s Coffee Special:</strong> ${coffee.day}'s daily coffee special is <strong>${coffee.name}</strong> ${coffee.desc}
+		</p>
+    `;
+
+    return myReturn;
+}
+
 
 
 
