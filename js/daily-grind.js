@@ -33,7 +33,8 @@ if(urlParams.has("day")){
     myDay = urlParams.get("day");
 }
 
-
+//turn string into integer
+myDay = parseInt(myDay);
 
 
 switch(myDay){
