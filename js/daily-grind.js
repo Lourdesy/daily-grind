@@ -19,6 +19,16 @@ let myDate = new Date();
 let myDay = myDate.getDay();
 let today = "";
 
+//use location object to access querystring (address bar)
+const queryString = window.location.search;
+    
+//output to console    
+console.log(queryString);
+    
+//separate query string parameters
+const urlParams = new URLSearchParams(queryString);
+
+
 switch(myDay){
 
  	case 0:
@@ -28,16 +38,15 @@ switch(myDay){
  	case 1:
    		today = "Monday";
         coffee = {
-            name:"Bubble Tea",
-            pic:"bubble-tea.jpg",
-            alt:"A pic of a yummy bubble tea.",
-            color:"pink",
-            day:"Tuesday",
-            desc: `I like me some Bubble Tea!`
+            name:"Caramel Latte",
+            pic:"caramel-tea.jpg",
+            alt:"A pic of a delicious caramel latte.",
+            color:"red",
+            day:"Monday",
+            desc: `I like some Caramel Latte!`
 
         }
  	break;
-
 
     case 2:
    		today = "Tuesday";
@@ -51,30 +60,29 @@ switch(myDay){
 
         }
  	break;
+    case 3:
+   		today = "Wednesday";
+        coffee = {
+            name:"Mocha",
+            pic:"mocha.jpg",
+            alt:"A pic of mocha.",
+            color:"Brown",
+            day:"Wednesday",
+            desc: `I like me some Mocha!`
 
+        }
+ 	break;
+        case 4:
+   		today = "Thursday";
+        coffee = {
+            name:"Frappaccino",
+            pic:"frappaccino.jpg",
+            alt:"A pic of Frappaccino.",
+            color:"Blue",
+            day:"Thursday",
+            desc: `I like frappaccino!`
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+        }
     case 5:
    		today = "Friday";
         coffee = {
@@ -87,6 +95,19 @@ switch(myDay){
 
         }
  	break;
+        case 6:
+   		today = "Saturday";
+        coffee = {
+            name:"Cold Brew",
+            pic:"cold-brew.jpg",
+            alt:"A pic of a yummy Cold Brew.",
+            color:"orange",
+            day:"Saturday",
+            desc: `I want a cold brew!`
+
+        }
+ 	break;
+
 
  	default:
     	today = "Something went wrong!";
