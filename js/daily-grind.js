@@ -31,9 +31,21 @@ switch(myDay){
             name:"Bubble Tea",
             pic:"bubble-tea.jpg",
             alt:"A pic of a yummy bubble tea.",
-            color:"pink"
+            color:"pink",
             day:"Tuesday",
             desc: `I like me some Bubble Tea!`
+
+        }
+ 	break;
+    case 5:
+   		today = "Friday";
+        coffee = {
+            name:"Drip",
+            pic:"drip.jpg",
+            alt:"A pic of drip coffee.",
+            color:"green",
+            day:"Friday",
+            desc: `I need a constant drip!`
 
         }
  	break;
@@ -45,7 +57,9 @@ switch(myDay){
 
 console.log(coffee);
 
-alert(coffeeTemplate(coffee));
+//alert(coffeeTemplate(coffee));
+
+//Adds coffee to page?
 
 document.getElementById("coffee-cup").innerHTML = coffeeTemplate(coffee)
 
