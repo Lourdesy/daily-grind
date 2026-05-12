@@ -129,6 +129,9 @@ console.log(coffee);
 //Adds coffee to page?
 document.getElementById("coffee-cup").innerHTML = coffeeTemplate(coffee);
 
+//change background color of HTML element
+document.getElementById("coffee-cup").innerHTML = Coffee
+
 //change strong tags in template to our color
 document.querySelectorAll("#coffee-cup strong").forEach(el => {
     el.style.color = coffee.color;
